@@ -1,0 +1,73 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e0dcc1; /* สีพื้นหลัง */
+    margin: 0;
+    padding: 20px;
+}
+
+h3 {
+    text-align: center;
+    color: white;
+    background-color: #8B0000; /* พื้นหลังสีแดงเข้ม */
+    padding: 15px;
+    font-size: 24px;
+    margin-bottom: 30px;
+    border-radius: 15px;
+}
+
+.container {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    
+}
+
+.result {
+    background-color: #8B0000; /* พื้นหลังสีแดงเข้มสำหรับกล่องผลลัพธ์ */
+    color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.rank {
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.similarity, .risk-level {
+    font-size: 16px;
+}
+
+.no-result {
+    text-align: center;
+    font-size: 18px;
+    color: red;
+    margin-top: 20px;
+}
+.low-risk {
+    background-color: #28a745; 
+    color: rgb(0, 0, 0);
+}
+
+.moderate-risk {
+    background-color: #ffc107; 
+    color: black;
+}
+
+.high-risk {
+    background-color: #fd7e14; 
+    color: rgb(0, 0, 0);
+}
+
+.very-high-risk {
+    background-color: #dc3545; 
+    color: rgb(0, 0, 0);
+}
+.no-risk {
+    background-color: #17a2b8; 
+    color: rgb(0, 0, 0);
+}
+

@@ -1,0 +1,177 @@
+/* กำหนดการตั้งค่าให้กับ body ทั้งหมด */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #DAD4B5;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column; /* จัดองค์ประกอบเป็นคอลัมน์ */
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* สไตล์ของฟอร์ม */
+form {
+    background-color: #a63636; /* พื้นหลังสีแดง */
+    padding: 30px;
+    border-radius: 20px; /* มุมโค้งมนเพิ่มขึ้น */
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    width: 100%;
+    margin: 50px 0px; /* เพิ่ม margin-top ให้เลื่อนฟอร์มลงมา */
+}
+
+/* สไตล์ของหัวข้อ */
+h1, h2 {
+    text-align: center;
+    color: #ffffff;
+    margin: 0; /* ลบระยะห่าง */
+    padding: 20px; /* ลบ padding */
+    width: 100%; /* ให้ครอบคลุมพื้นที่เต็ม */
+    
+}
+
+h2 {
+    font-size: 24px; /* ขนาดตัวอักษร h2 */
+    padding: 70px 0;
+   
+    background-color: #a63636; /* สีแดงเข้ม */
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+h1 {
+    font-size: 16px; /* ขนาดตัวอักษร h1 ให้เล็กกว่า h2 */
+    padding: 50px 0; /* ระยะ padding */
+    background-color: #a63636; /* สีแดงเข้ม */
+    border-bottom-left-radius: 20px; /* ขอบมนด้านล่างซ้าย */
+    border-bottom-right-radius: 20px; /* ขอบมนด้านล่างขวา */
+}
+
+
+/* รูปภาพ */
+img {
+    display: block;
+    margin: 0 auto 30px auto;
+    border-radius: 10px;
+    width: 100%;
+    height: auto;
+}
+
+/* label */
+label {
+    font-size: 16px;
+    color: #ffffff;
+    display: block;
+    margin-bottom: 10px; /* เพิ่มช่องว่างระหว่างข้อความกับไอคอน */
+    display: inline-block; /* เปลี่ยนเป็น inline เพื่อจัดให้อยู่แนวเดียวกับไอคอน */
+}
+
+/* select */
+select {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #dddddd;
+    border-radius: 20px;
+    font-size: 14px;
+    background-color: #ffe0e0; /* สีพื้นหลังอ่อน */
+    transition: border-color 0.3s ease;
+}
+
+select:focus {
+    border-color: #007bff;
+}
+
+/* ปุ่ม submit */
+input[type="submit"] {
+    width: 100%;
+    padding: 15px;
+    background-color: #d0aa3a; /* ปุ่มสีเหลือง */
+    color: #000000; /* ตัวอักษรสีดำ */
+    font-size: 16px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #ede1b8;
+}
+
+/* เอฟเฟกต์โฮเวอร์ */
+select:hover, input[type="submit"]:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+/* กำหนดสไตล์ให้กับไอคอนรูปภาพ */
+.image-icon {
+    display: flex;
+    justify-content: center;
+    margin-top: 60px; /* เพิ่มช่องว่างด้านบน */
+    margin-bottom: 20px; /* ช่องว่างด้านล่าง */
+}
+
+.icon {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    display: inline-block; /* ให้ไอคอนอยู่ในแนวเดียวกับข้อความ */
+    margin-left: 10px; /* เพิ่มช่องว่างระหว่างไอคอนกับข้อความ */
+    transition: transform 0.2s;
+    margin-bottom: -5px;
+}
+.icon:hover {
+    transform: scale(1.1); /* ขยายไอคอนเมื่อเม้าส์ hover */
+}
+
+/* สไตล์ของป๊อปอัป */
+.popup {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8); /* สีพื้นหลัง */
+}
+
+.popup-content {
+    display: block;
+    margin: 0 auto;
+    width: 80%;
+    max-width: 700px;
+    border-radius: 10px;
+}
+
+/* ปุ่มปิด */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+} 
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+@media (max-width: 600px) {
+    h2 {
+        font-size: 20px; /* ลดขนาดตัวอักษร h2 สำหรับมือถือ */
+    }
+    input[type="submit"] {
+        padding: 12px; /* ลดขนาด padding ปุ่ม */
+    }
+    .icon {
+        width: 18px; /* ลดขนาดไอคอนสำหรับมือถือ */
+        height: 18px;
+    }
+}
+
