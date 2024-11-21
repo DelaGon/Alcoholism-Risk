@@ -1,7 +1,7 @@
 /* กำหนดการตั้งค่าให้กับ body ทั้งหมด */
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: #DAD4B5;
+    background-color: #F5F5F5;
     margin: 0;
     padding: 20px;
     display: flex;
@@ -12,7 +12,7 @@ body {
 
 /* สไตล์ของฟอร์ม */
 form {
-    background-color: #a63636; /* พื้นหลังสีแดง */
+    background-color: #a63636 ; /* พื้นหลังสีแดง */
     padding: 30px;
     border-radius: 20px; /* มุมโค้งมนเพิ่มขึ้น */
     box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
@@ -35,7 +35,7 @@ h2 {
     font-size: 24px; /* ขนาดตัวอักษร h2 */
     padding: 70px 0;
    
-    background-color: #a63636; /* สีแดงเข้ม */
+    background-color: #a63636 ; /* สีแดงเข้ม */
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
 }
@@ -43,10 +43,17 @@ h2 {
 h1 {
     font-size: 16px; /* ขนาดตัวอักษร h1 ให้เล็กกว่า h2 */
     padding: 50px 0; /* ระยะ padding */
-    background-color: #a63636; /* สีแดงเข้ม */
+    background-color: #a63636 ; /* สีแดงเข้ม */
     border-bottom-left-radius: 20px; /* ขอบมนด้านล่างซ้าย */
     border-bottom-right-radius: 20px; /* ขอบมนด้านล่างขวา */
 }
+.small-red-text {
+    font-size: 14px; /* กำหนดขนาดฟอนต์ */
+    color: rgb(255, 255, 255); /* กำหนดสีฟอนต์ */
+    margin: 10px 0; /* กำหนดระยะห่างด้านบน-ล่าง */
+    font-weight: normal; /* ไม่ให้เป็นตัวหนาเกินไป */
+}
+
 
 
 /* รูปภาพ */
@@ -75,7 +82,7 @@ select {
     border: 1px solid #dddddd;
     border-radius: 20px;
     font-size: 14px;
-    background-color: #ffe0e0; /* สีพื้นหลังอ่อน */
+    background-color: #ffebeb; /* สีพื้นหลังอ่อน */
     transition: border-color 0.3s ease;
 }
 
@@ -87,7 +94,7 @@ select:focus {
 input[type="submit"] {
     width: 100%;
     padding: 15px;
-    background-color: #d0aa3a; /* ปุ่มสีเหลือง */
+    background-color: #D08770; /* ปุ่มสีเหลือง */
     color: #000000; /* ตัวอักษรสีดำ */
     font-size: 16px;
     border: none;
